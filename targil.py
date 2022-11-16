@@ -16,7 +16,7 @@ print('result, ' ,res )
 '''
 
 #simple convert weight from L to K and vice verca
-weight=float(input("Weight "))
+'''weight=float(input("Weight "))
 type=((input("(K)g or (L)bs ")))
 if type.lower()=='l':
     res=float(weight*0.45359237)
@@ -24,5 +24,29 @@ if type.lower()=='l':
 else:
     res=float(weight/0.45359237)
     print('Weight in bs ' ,res )
+'''
 
+#An example of dictionary
+'''months={
+    1:"January",
+    2:"Februaty",
+    3:"March"
+}
 
+print(months.get(0,"Doesn't exists"))
+
+def raise_to_power(base,pow):
+    res=1
+    while pow>1:
+        res*=base
+        pow=pow-1
+    return res
+
+print(raise_to_power(2,4))
+'''
+import usefullTools
+usefullTools.hello("Ron")
+
+from main import Person
+person1= Person("Mor",22)
+print(person1.name,",",person1.age)
